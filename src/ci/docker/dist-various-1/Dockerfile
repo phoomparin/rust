@@ -86,7 +86,8 @@ ENV RUST_CONFIGURE_ARGS \
       --musl-root-arm=/musl-arm \
       --musl-root-armhf=/musl-armhf \
       --musl-root-armv7=/musl-armv7 \
-      --musl-root-aarch64=/musl-aarch64
+      --musl-root-aarch64=/musl-aarch64 \
+      --enable-emscripten
 ENV SCRIPT python2.7 ../x.py dist --target $TARGETS
 
 # sccache
